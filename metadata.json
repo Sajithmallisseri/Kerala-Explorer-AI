@@ -1,0 +1,6 @@
+{
+  "name": "Kerala Explorer – Discover Beautiful Kerala",
+  "description": "Explore Kerala's mountains, backwaters, beaches, culture, and authentic travel guides with Kerala Explorer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
