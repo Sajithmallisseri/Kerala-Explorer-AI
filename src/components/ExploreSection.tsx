@@ -53,13 +53,17 @@ export const ExploreSection: React.FC<ExploreSectionProps> = ({
               <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
                 <img
                   src={dest.image}
-                  alt={`${dest.name} in ${dest.district}, Kerala`}
+                  alt={`${dest.name} - ${dest.tagline} in ${dest.district}, Kerala`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                   loading="lazy"
                   onError={(e) => {
-                    // Styled fallback if image fails
-                    e.currentTarget.style.display = "none";
+                    // Try alternative relative path if needed, or maintain styled backdrop
+                    const target = e.currentTarget;
+                    if (!target.dataset.triedFallback) {
+                      target.dataset.triedFallback = "true";
+                      target.src = `.${dest.image}`;
+                    }
                   }}
                 />
                 {/* Fallback pattern underneath */}

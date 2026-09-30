@@ -54,10 +54,17 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
       <div className="relative aspect-[16/9] sm:aspect-[21/9] w-full overflow-hidden bg-stone-900">
         <img
           src={article.featuredImage}
-          alt={article.title}
+          alt={`${article.title} - Kerala travel guide featured editorial image`}
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
           loading="eager"
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (!target.dataset.triedFallback) {
+              target.dataset.triedFallback = "true";
+              target.src = `.${article.featuredImage}`;
+            }
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
 
@@ -228,10 +235,17 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
                   <div className="relative aspect-[16/10] rounded-xl overflow-hidden my-6 bg-stone-100 border border-stone-200 shadow-xs">
                     <img
                       src={dest.image}
-                      alt={`${dest.name}, Kerala`}
+                      alt={`Scenic landscape of ${dest.name}, ${dest.tagline} in ${dest.district}, Kerala`}
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                       loading="lazy"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        if (!target.dataset.triedFallback) {
+                          target.dataset.triedFallback = "true";
+                          target.src = `.${dest.image}`;
+                        }
+                      }}
                     />
                     <div className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-xs text-white text-xs px-2.5 py-1 rounded-md font-sans">
                       {dest.district}

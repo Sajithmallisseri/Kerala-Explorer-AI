@@ -1,3 +1,5 @@
+import { IMAGES } from "../assets/images";
+
 export interface Destination {
   id: string;
   number: number;
@@ -21,7 +23,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Munnar",
     tagline: "Rolling Emerald Tea Estates & Misty Western Ghats",
     district: "Idukki District",
-    image: "/src/assets/images/munnar_tea_hills_1790745407418.jpg",
+    image: IMAGES.munnar,
     shortDesc: "A postcard-perfect hill station nestled at 1,600 meters, famous for sprawling tea plantations, cool mountain breezes, and rare Neelakurinji blossoms.",
     fullDescription: "Perched high in the Western Ghats mountain range of Kerala, Munnar is a sanctuary of emerald serenity. Once the summer retreat of the British administration in South India, this mountain paradise is defined by endlessly contoured hills blanketed in velvety tea bushes, fragrant eucalyptus groves, cascading waterfalls, and misty peaks often cloaked in early-morning clouds. Munnar is also home to Eravikulam National Park, where the endangered Nilgiri Tahr roams along high-altitude shola grasslands beneath Anamudi, South India's highest peak at 2,695 meters.",
     highlights: [
@@ -45,7 +47,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Alleppey (Alappuzha)",
     tagline: "The Venice of the East & Venetian Backwater Canals",
     district: "Alappuzha District",
-    image: "/src/assets/images/alleppey_houseboat_1790745422293.jpg",
+    image: IMAGES.alleppey,
     shortDesc: "The soul of Kerala's backwaters, where traditional thatched houseboats float down tranquil lagoons fringed by whispering coconut palms and vibrant village life.",
     fullDescription: "Referred to affectionately by Lord Curzon as the 'Venice of the East', Alappuzha is an intricate labyrinth of calm canals, vast lagoons, and emerald paddy fields located below sea level in the Kuttanad farming region. A journey aboard a traditional Kettuvallam (thatched rice barge crafted from wild jackwood planks bound with coir rope) offers an unhurried window into authentic Kerala village life: coir makers spinning golden husk fiber, children paddling canoes to school, and kingfishers darting into mirror-flat waters.",
     highlights: [
@@ -69,7 +71,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Wayanad",
     tagline: "Ancient Caves, Spice Forests & Cloud-Kissed Ridges",
     district: "Wayanad District",
-    image: "/src/assets/images/wayanad_nature_1790745446184.jpg",
+    image: IMAGES.wayanad,
     shortDesc: "A pristine bio-reserve perched atop the Western Ghats plateau, brimming with Neolithic rock carvings, spice plantations, and dense bamboo forests.",
     fullDescription: "Nestled in the lush elevated plateau of the northern Western Ghats, Wayanad blends rich prehistoric history with wild biodiversity. From the ancient petroglyphs carved into the cavern walls of Edakkal Caves—dating back to 6,000 BCE—to the heart-shaped lake resting near Chembra Peak, Wayanad is a haven for trekkers, naturalists, and those seeking untouched forest tranquility. Its fertile hills are rich in black pepper, cardamom, wild honey, and aromatic Wayanad Gandhakasala rice.",
     highlights: [
@@ -93,7 +95,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Thekkady",
     tagline: "Periyar Wildlife Sanctuary & Aromatic Spice Plantations",
     district: "Idukki District",
-    image: "/src/assets/images/thekkady_wildlife_1790745473609.jpg",
+    image: IMAGES.thekkady,
     shortDesc: "Home to India's premier tiger reserve, where boat cruises across Periyar Lake reveal wild elephant herds, sambar deer, and rare birds along the water's edge.",
     fullDescription: "Located near the border of Kerala and Tamil Nadu, Thekkady is centered around the Periyar National Park and Tiger Reserve. An artificial lake created by the British-era Mullaperiyar Dam in 1895 forms the focal point of the sanctuary, where dead tree trunks rise eerily from the water like natural sculptures. Here, eco-tourism programs managed by local tribal trackers allow travelers to engage in guided bamboo rafting, border hikes, and visits to spice gardens cultivating cardamom, cloves, cinnamon, and nutmeg.",
     highlights: [
@@ -117,7 +119,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Kovalam",
     tagline: "Crescent Golden Beaches & Iconic Striped Lighthouse",
     district: "Thiruvananthapuram District",
-    image: "/src/assets/images/kovalam_beach_1790745461005.jpg",
+    image: IMAGES.kovalam,
     shortDesc: "An internationally acclaimed coastal retreat consisting of three adjacent crescent beaches, famous for its red-and-white lighthouse and coastal Ayurvedic retreats.",
     fullDescription: "Kovalam shot to worldwide prominence in the 1970s along the hippie trail, transforming from a quiet fishing village into one of South Asia's favorite beach destinations. Sheltered by massive rocky promontories, its three curving beaches—Lighthouse Beach, Hawah Beach, and Samudra Beach—provide sheltered sea conditions ideal for swimming and catamaran cruising. Perched atop Kurumkal Hill, the 118-foot red-and-white striped lighthouse offers commanding 360-degree vistas of the sparkling Arabian Sea and coconut palm coastline.",
     highlights: [
@@ -141,7 +143,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Fort Kochi",
     tagline: "Historic Spice Harbor, Chinese Fishing Nets & Colonial Heritage",
     district: "Ernakulam District",
-    image: "/src/assets/images/kochi_chinese_nets_1790745433665.jpg",
+    image: IMAGES.kochi,
     shortDesc: "A captivating melting pot of Portuguese, Dutch, British, and Jewish history, crowned by the giant cantilevered Chinese fishing nets along the harbor front.",
     fullDescription: "A historic trading port that has welcomed Arabs, Chinese, Portuguese, Dutch, and British merchants for over six centuries, Fort Kochi is Kerala's cultural heart. Stroll along cobblestone streets lined with Portuguese mansions, discover the 16th-century St. Francis Church where explorer Vasco da Gama was originally buried, explore the bustling Jew Town with its 450-year-old Paradesi Synagogue, and watch the synchronized rhythm of fishermen operating the cantilevered shore-operated Chinese fishing nets (Cheena Vala).",
     highlights: [
@@ -165,7 +167,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Varkala (Papanasam Beach)",
     tagline: "Dramatic Red Laterite Cliffs & Sacred Purifying Waters",
     district: "Thiruvananthapuram District",
-    image: "/src/assets/images/varkala_cliff_1790745520817.jpg",
+    image: IMAGES.varkala,
     shortDesc: "A striking seaside setting where precipitous red sandstone cliffs drop sheer into golden sands, known for bohemian cliff-side cafes, yoga sanctuaries, and sacred mineral springs.",
     fullDescription: "Unlike any other coastal spot in South India, Varkala features unique geological formations: dramatic Tertiary sedimentary cliffs running parallel to the Arabian Sea. The cliff top is lined with open-air cafes, yoga studios, and handicraft boutiques, offering front-row sunset views over the ocean. Papanasam Beach at the southern base is considered sacred; its name translates to 'redemption from sins', and natural mineral springs bubbling from the cliff face are believed to possess curative properties.",
     highlights: [
@@ -189,7 +191,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Athirappilly Waterfalls",
     tagline: "The Grand 'Niagara of India' in the Sholayar Forest Range",
     district: "Thrissur District",
-    image: "/src/assets/images/athirappilly_falls_1790745533811.jpg",
+    image: IMAGES.athirappilly,
     shortDesc: "A majestic 80-foot high and 330-foot wide curtain of roaring water cascading through dense Sholayar rainforest into the Chalakudy River.",
     fullDescription: "Widely celebrated as the 'Niagara of India', Athirappilly is the largest and most awe-inspiring waterfall in Kerala. Fed by the Chalakudy River emerging from the high Anamudi ranges, the river crashes down three spectacular plumes over giant granite boulders. The surrounding riparian ecosystem is one of only two places in the Western Ghats where all four South Indian hornbill species—including the majestic Great Hornbill—can be observed in their natural canopy.",
     highlights: [
@@ -213,7 +215,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Kumarakom",
     tagline: "Birdwatcher's Sanctuary on the Shore of Vembanad Lake",
     district: "Kottayam District",
-    image: "/src/assets/images/alleppey_houseboat_1790745422293.jpg",
+    image: IMAGES.kumarakom,
     shortDesc: "A serene cluster of backwater islets on Vembanad Lake, world-famous for luxury Ayurvedic heritage resorts and migratory Siberian birds.",
     fullDescription: "Located on the eastern shore of Vembanad Lake—India's longest freshwater lake—Kumarakom is a peaceful contrast to the busier canals of Alleppey. Developed initially around an English rubber plantation established by Alfred George Baker in 1847, Kumarakom is renowned for its 14-acre bird sanctuary where migratory species such as Siberian storks, egrets, herons, and cormorants flock each winter. It is also the birthplace of Kerala's pioneering Responsible Tourism initiative.",
     highlights: [
@@ -237,7 +239,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Bekal",
     tagline: "Ancient Coastal Fortress & Untamed Northern Seascapes",
     district: "Kasaragod District",
-    image: "/src/assets/images/bekal_fort_1790745548183.jpg",
+    image: IMAGES.bekal,
     shortDesc: "The largest and best-preserved historic fort in Kerala, rising dramatically from the Arabian Sea with keyhole-shaped ramparts and endless palm-fringed sands.",
     fullDescription: "Dominating the northern tip of Kerala in Kasaragod district, Bekal Fort is a 300-year-old marvel of coastal military architecture. Built in 1650 CE by Shivappa Nayaka of the Keladi dynasty, its keyhole-shaped laterite walls jut directly into the sea, allowing defense against maritime attacks. Unlike many inland forts, Bekal contains no administrative palace; instead, it was conceived purely as a maritime citadel with a grand circular observation tower, underground ammunition depots, and sea-facing gun openings.",
     highlights: [

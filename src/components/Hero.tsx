@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight, BookOpen, Info, MapPin } from "lucide-react";
+import { heroImage } from "../assets/images";
 
 interface HeroProps {
   onExploreArticles: () => void;
@@ -17,8 +18,8 @@ export const Hero: React.FC<HeroProps> = ({
       {/* Background Image Container with Measured Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_kerala_backwaters_1790745390707.jpg"
-          alt="Tranquil Kerala backwaters with traditional houseboat at golden sunrise"
+          src={heroImage}
+          alt="Tranquil Kerala backwaters with traditional kettuvallam houseboat at golden sunrise"
           className="w-full h-full object-cover object-center scale-105 transform motion-safe:animate-subtle-zoom"
           referrerPolicy="no-referrer"
           loading="eager"

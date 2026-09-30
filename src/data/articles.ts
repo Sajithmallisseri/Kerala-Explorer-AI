@@ -1,4 +1,5 @@
 import { DESTINATIONS, Destination } from "./destinations";
+import { IMAGES } from "../assets/images";
 
 export interface Article {
   id: string;
@@ -51,7 +52,7 @@ export const ARTICLES: Article[] = [
     readTime: "8 min read",
     publishedDate: "March 2026",
     isFlagship: true,
-    featuredImage: "/src/assets/images/hero_kerala_backwaters_1790745390707.jpg",
+    featuredImage: IMAGES.hero,
     author: {
       name: "Dr. Ananya Nair",
       role: "Senior Travel Editor & Kerala Heritage Specialist",
@@ -122,7 +123,7 @@ export const ARTICLES: Article[] = [
     tags: ["Food", "Cuisine", "Culture", "Kerala"],
     readTime: "6 min read",
     publishedDate: "February 2026",
-    featuredImage: "/src/assets/images/kochi_chinese_nets_1790745390707.jpg",
+    featuredImage: IMAGES.kochi,
     author: {
       name: "Chef Rajesh Menon",
       role: "Culinary Historian & Food Writer",
@@ -174,7 +175,7 @@ export const ARTICLES: Article[] = [
     tags: ["Travel Tips", "Alleppey", "Houseboat", "Backwaters"],
     readTime: "5 min read",
     publishedDate: "January 2026",
-    featuredImage: "/src/assets/images/alleppey_houseboat_1790745422293.jpg",
+    featuredImage: IMAGES.alleppey,
     author: {
       name: "Sajith K. Varma",
       role: "Eco-Tourism Consultant",
@@ -215,7 +216,7 @@ export const ARTICLES: Article[] = [
     tags: ["Culture", "Kathakali", "History", "Heritage"],
     readTime: "7 min read",
     publishedDate: "January 2026",
-    featuredImage: "/src/assets/images/kochi_chinese_nets_1790745433665.jpg",
+    featuredImage: IMAGES.kochi,
     author: {
       name: "Meera Krishnan",
       role: "Performing Arts Critic",
@@ -255,7 +256,7 @@ export const ARTICLES: Article[] = [
     tags: ["Nature", "Monsoon", "Ayurveda", "Weather"],
     readTime: "5 min read",
     publishedDate: "December 2025",
-    featuredImage: "/src/assets/images/wayanad_nature_1790745446184.jpg",
+    featuredImage: IMAGES.wayanad,
     author: {
       name: "Dr. Ananya Nair",
       role: "Senior Travel Editor",
@@ -289,7 +290,7 @@ export const ARTICLES: Article[] = [
     tags: ["Kerala", "Ecotourism", "Culture", "Sustainability"],
     readTime: "5 min read",
     publishedDate: "November 2025",
-    featuredImage: "/src/assets/images/alleppey_houseboat_1790745422293.jpg",
+    featuredImage: IMAGES.alleppey,
     author: {
       name: "Sajith K. Varma",
       role: "Eco-Tourism Consultant",
